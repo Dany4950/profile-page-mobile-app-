@@ -20,9 +20,13 @@ class MyContainer extends StatelessWidget {
                 "About ",
                 style: TextStyle(
                   fontWeight: FontWeight.bold,
-                  fontSize: 15,
+                  fontSize: 18,
                   decoration: TextDecoration.underline,
                 ),
+              ),
+              Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: Text("  This is a flutter UI of a profile page where , you can see the prime details of a person and its created using stateless widget , using multiple widgets like row and column in flutter !                    ~Sujay Daniel" , style: TextStyle(fontWeight: FontWeight.w400),),
               )
             ],
           ),

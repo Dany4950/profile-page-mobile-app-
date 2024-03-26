@@ -5,7 +5,7 @@ class MyAppbar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Text(
-        " Sujay Daniel  ",
+        " My Profile   ",
         style: TextStyle(fontWeight: FontWeight.w500 , fontSize: 20),
       ), // adding font weight
 

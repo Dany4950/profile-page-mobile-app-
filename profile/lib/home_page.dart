@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:profile/about%20.dart';
+import 'package:profile/education.dart';
+import 'package:profile/experience.dart';
 import 'package:profile/try.dart';
 
 class MyHomepage extends StatelessWidget {
@@ -18,6 +20,9 @@ class MyHomepage extends StatelessWidget {
                 radius: 70,
                 backgroundImage: NetworkImage(
                     'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0adiEkroLPKsxTzabUkUAMAC4f-jeWOl3OMIUuIt2JTQVm2RiE8OYp9LLKn738oj_jgw&usqp=CAU'),
+
+
+                // backgroundImage: AssetImage('assets/profile.jpeg'),
               ),
             ),
           ),
@@ -25,7 +30,7 @@ class MyHomepage extends StatelessWidget {
             padding: EdgeInsets.only(top: 10, bottom: 30),
             child: Column(children: [
               Padding(
-                padding: const EdgeInsets.only(bottom: 07),
+                padding: const EdgeInsets.only(bottom: 07, top: 15),
                 child: Container(
                     height: 50,
                     width: 200,
@@ -34,13 +39,13 @@ class MyHomepage extends StatelessWidget {
                         borderRadius: BorderRadius.circular(30),
                         boxShadow: [BoxShadow(offset: Offset(3, 4))]),
                     child: Text(
-                      " Sujay Daniel ",
+                      " Charles Paul ",
                       style:
                           TextStyle(fontSize: 30, fontWeight: FontWeight.w500),
                     )),
               ),
               Text(
-                "danyy4950@gmail.com",
+                "abcd4950@gmail.com",
                 style: TextStyle(fontSize: 15, fontWeight: FontWeight.w400),
               ),
             ]),
@@ -52,20 +57,12 @@ class MyHomepage extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.all(60),
-                  child: MyContainer(),
+                  child:MyEducation(),
                 ),
                 Padding(
-                  padding: const EdgeInsets.all(60.0),
-                  child: MyContainer()
-                ),
+                    padding: const EdgeInsets.all(60.0), child: MyEducation()),
                 Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Container(
-                    height: 300,
-                    width: 250,
-                    color: Colors.purple[300],
-                  ),
-                ),
+                    padding: const EdgeInsets.all(8.0), child: MyFeedback()),
               ],
             ),
           )
